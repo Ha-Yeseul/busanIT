@@ -187,8 +187,8 @@
   }
  
   footer{
-    height: inherit;
-    padding: 50px 20px;
+    padding: 35px 20px;
+    height: 30vh;
   }
 
   footer .f_logo {
@@ -210,7 +210,7 @@ footer address{
 }
 
 footer p{
-  display: block;
+  justify-content: center;  
   margin-right: 10px;
   text-align: center;
 }
@@ -218,4 +218,5 @@ footer p{
 footer span{
   color: #fff;
 }
+
 }
