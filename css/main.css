@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 .inner {
   width: 1200px;
@@ -21,12 +22,16 @@ header {
   padding: 0 15px;
 }
 
+
 header .logo {
   background: url(../img/logo.png) no-repeat left;
   font-size: 0;
   color: transparent;
   width: 145px;
   height: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 header .search {
@@ -35,6 +40,9 @@ header .search {
   right: 0;
   top: 0;
   width: 180px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 header .search label {

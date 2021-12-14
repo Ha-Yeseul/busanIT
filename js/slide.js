@@ -31,8 +31,11 @@ $(document).ready(function () {
 
   $(window).scroll(function () { 
     var win = $(window).scrollTop(); 
-    console.log(win);
-    console.log("board"+board);
+    console.log("win "+win);
+    console.log("board "+board);
+    console.log("boardH "+boardH)
+    console.log("visual02 "+visual02)
+
     if(win>=intro-(swiperH / 1.5) && win < introBhs -300){
       $(".intro .con_area").addClass("on");
       $(".intro .con_photo").addClass("on");
@@ -69,14 +72,14 @@ $(document).ready(function () {
       $(".board .inner > div").removeClass("motion");
     }
 
-    if(win>=visual02-boardH/2){
+    if(win>=visual02-boardH){
       $(".visual02 p").addClass("top");
       $(".visual02 h2").addClass("top");
 
       $(".visual02 .btn_box a:first-child").addClass("left");
       $(".visual02 .btn_box a:last-child").addClass("right");
     }
-    else if(win>= businessH/2){
+    else if(win>= businessH){
       $(".visual02 p").removeClass("top");
       $(".visual02 h2").removeClass("top");      
       $(".visual02 .btn_box a:first-child").removeClass("left");
@@ -87,6 +90,11 @@ $(document).ready(function () {
   $(".more").click(function (e) { 
     e.preventDefault();
     $(".business ul").slideToggle(1000);
+    $(".visual02 p").addClass("top");
+    $(".visual02 h2").addClass("top");
+
+    $(".visual02 .btn_box a:first-child").addClass("left");
+    $(".visual02 .btn_box a:last-child").addClass("right");
   });
 
   $(".visual02 .question").click(function (e) { 
